@@ -1,0 +1,114 @@
+@import './assets/Styles/colors';
+@import './assets/Styles/helpers';
+
+@import '~loaders.css/src/animations/pacman.scss';
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;1,700&family=Open+Sans:wght@400;700&family=Rubik:wght@300;500;700&display=swap');
+
+@font-face {
+  font-family: 'Helvetica neue';
+  src: url(./assets/fonts/helvetica-neu.ttf) format('ttf');
+}
+
+@font-face {
+  font-family: 'Coolvetica';
+  src: url(./assets/fonts/CoolveticaRg-Regular.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'La belle aurore';
+  src: url(./assets/fonts/LaBelleAurore.woff2) format('woff2');
+}
+
+input,
+textarea {
+  font-family: 'Helvetica neue';
+}
+
+
+.loader-active {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  left: 0;
+  right: 0;
+  width: 55px;
+  height: 55px;
+  animation: fadeOut .5s .5s;
+  animation-fill-mode: forwards;
+
+   .loader-inner div:first-of-type , .loader-inner div:nth-child(2){
+    border-top: 25px solid $primary-cyan-color;
+    border-bottom: 25px solid $primary-cyan-color;
+    border-left: 25px solid $primary-cyan-color;
+    border-right: 25px solid transparent;
+    background-color: transparent !important;
+    } 
+   .loader-inner {
+     div {
+       background-color: $primary-cyan-color;
+     }
+   }
+
+}
+
+/* Paragraph Html tags */
+.paraContainer {
+  position: relative;
+  padding: 10px 0;
+  p {
+    word-break: break-word;
+  }
+
+  &::before {
+    @include htmlTags('<p>', -10px, -10px);
+    line-height: 18px;
+  }
+
+  &::after {
+    @include htmlTags("</p>", '', -10px);
+    bottom: -10px;
+    line-height: 18px;
+  }
+}
+
+@include breakPoint(mobile) {
+  .paraContainer {
+
+    p {
+    }
+  
+    &::before {
+      @include htmlTags('<p>', -10px, 7px);
+      line-height: 18px;
+    }
+  
+    &::after {
+      @include htmlTags("</p>", '', 7px);
+      bottom: -10px;
+      line-height: 18px;
+    }
+  }
+}
+@include breakPoint(small) {
+  .paraContainer {
+    position: relative;
+    padding: 10px 0;
+    p {
+      word-break: break-word;
+    }
+  
+    &::before {
+      @include htmlTags('<p>', -10px, -10px);
+      line-height: 18px;
+    }
+  
+    &::after {
+      @include htmlTags("</p>", '', -10px);
+      bottom: -10px;
+      line-height: 18px;
+    }
+  }
+}

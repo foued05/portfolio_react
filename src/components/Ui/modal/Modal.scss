@@ -1,0 +1,243 @@
+@import '../../../assets/Styles/colors';
+@import '../../../assets/Styles/helpers';
+
+
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 60%;
+    height: 100vh;
+    z-index: 1112;
+    transition: all .5s ease-out;
+    animation: fadeIn .5s both;
+
+    &.exiting{
+        animation: zoomOut 2s backwards; 
+    }
+
+    .image-container {
+        width: 100%;
+        position: relative;
+        height: 50%;
+        overflow: hidden;
+        display: flex;
+
+        img {
+            width: 100%;
+            height: 100%;
+            transition: all .5s linear;
+            opacity: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            &.prevImg {
+                transform: translateX(-100%);
+            }
+
+            &.currentImg {
+                transform: translateX(0);
+                opacity: 1;
+
+            }
+
+            &.nextImg {
+                transform: translateX(100%);
+            }
+        }
+
+        i {
+            background-color: rgb(0 0 0 / 40%);
+            font-size: 30px;
+            color: #fff;
+            position: absolute;
+            bottom: 0;
+            padding: 10px 20px;
+            cursor: pointer;
+
+            &.left {
+                left: 0;
+            }
+
+            &.right {
+                right: 0;
+            }
+        }
+    }
+
+    .description {
+        color: #fff;
+        background-color: $dark-color;
+        height: 50%;
+        padding: 20px 20px 10px;
+        position: relative;
+
+        .header-container {
+            border-bottom: 1px solid $light-gray-color;
+
+            h2 {
+                font-weight: normal;
+                font-size: 22px;
+                font-family: 'Josefin sans', sans-serif;
+                color: $light-gray-color;
+            }
+
+            h3 {
+                font-weight: normal;
+                font-size: 20px;
+                font-family: 'Josefin sans', sans-serif;
+                color: $light-gray-color;
+                opacity: .7;
+                text-transform: uppercase;
+            }
+
+        }
+
+        .para-container {
+            p {
+                font-size: 14px;
+                color: $light-gray-color;
+                font-family: 'Helvetica neue', sans-serif;
+                font-weight: 300;
+            }
+
+        }
+
+        .btn-container {
+            position: absolute;
+            left: 20px;
+            bottom: 20px;
+            width: 100%;
+
+            button {
+                color: $light-gray-color;
+                font-size: 13px;
+                font-weight: 400;
+                letter-spacing: 4px;
+                font-family: sans-serif;
+                text-decoration: none;
+                opacity: 0;
+                padding: 10px 18px;
+                border: 1px solid $secondry-cyan-color;
+                animation: fadeIn 1s .5s forwards;
+                white-space: nowrap;
+                background-color: $dark-gray-color;
+                margin-right: 10px;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: $grey-color;
+                    color: $primary-cyan-color;
+                    border-color: $primary-cyan-color
+                }
+            }
+
+            .closeBtn {
+                @extend button;
+                position: absolute;
+                right: 2rem;
+            }
+
+        }
+    }
+
+}
+
+
+/*** Extra small devices ***/
+@include breakPoint(mobile) {
+    .modal {
+        width: 100%;
+        padding: 0 2rem;
+        top: 60%;
+
+        .image-container {
+            height: 30%;
+    
+            img {
+
+    
+                &.prevImg {
+                }
+    
+                &.currentImg {
+    
+                }
+    
+                &.nextImg {
+                }
+            }
+    
+            i {
+                padding: 0px 1.3rem;
+                font-size: 3rem;
+    
+                &.left {
+                }
+    
+                &.right {
+                }
+            }
+        }
+    
+
+        .description {
+           
+    
+            .header-container {
+
+    
+                h2 {
+                    font-size: 1.8rem;
+                }
+    
+                h3 {
+                    font-size: 1.6rem;
+                }
+    
+            }
+    
+            .para-container {
+                p {
+                    font-size: 1.2rem;
+                    letter-spacing: 0.1rem;
+                }
+    
+            }
+    
+            .btn-container {
+    
+                button {
+                    font-size: 1.2rem;
+                    padding: .8rem 1rem;
+    
+                    &:hover {
+                    }
+                }
+    
+                .closeBtn {
+                    @extend button;
+                    position: absolute;
+                    right: 2rem;
+                }
+    
+            }
+        }
+    
+    }
+}
+
+/*** End Extra small devices ***/
+
+/*** Small devices ***/
+@include breakPoint(small) {
+    .modal {
+        width: 80%;
+        margin: auto;
+    }
+}
+
+/*** End Small devices ***/

@@ -1,0 +1,68 @@
+@import './colors';
+
+
+@mixin tags-styles {
+    font-family: 'La Belle Aurore', cursive;
+    color: $light-gray-color;
+    font-size: 1.8rem;
+    position: absolute;
+}
+
+
+@mixin htmlTags($tag, $top, $left) {
+    content: $tag;
+    @include tags-styles;
+    @if $left == '' {
+        left: initial;
+    }
+    @else {
+        left: $left;
+    }
+    @if $top == '' {
+        top: initial;
+    }
+    @else {
+        top: $top;
+    }
+    opacity: .6;
+}
+
+@mixin breakPoint($point) {
+    @if $point == 'mobile' {
+        @media (max-width: 600px) {
+            @content;
+        }
+    } @else if $point == 'small' {
+        @media (min-width: 601px) and (max-width: 920px) {
+            @content;
+        }
+    }
+     @else if $point == 'medium' {
+        @media (min-width: 921px) and (max-width: 1300px) {
+            @content;
+        }
+    }
+}
+
+
+/* Cube animation */
+@mixin face($face) {
+  @if $face ==  front {
+      transform: translateZ(-100px) rotateY(0deg);
+  } 
+  @if $face ==  right {
+      transform: translateZ(-100px) rotateY(-90deg);
+  } 
+  @if $face ==  back {
+      transform: translateZ(-100px) rotateY(-180deg);
+  } 
+  @if $face ==  left {
+      transform: translateZ(-100px) rotateY(90deg);
+  } 
+  @if $face ==  top {
+      transform: translateZ(-100px) rotateX(-90deg);
+  } 
+  @if $face ==  bottom {
+      transform: translateZ(-100px) rotateX(90deg);
+  } 
+}

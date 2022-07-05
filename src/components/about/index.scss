@@ -1,0 +1,133 @@
+@import '../../assets/Styles/colors';
+@import '../../assets/Styles/helpers';
+
+
+.cv{
+  text-decoration: none;
+  color: #66fcf1;
+}
+
+.stage-cube-cont {
+  width: 50%;
+  margin-top: 50px;
+  margin-left: 50px;
+  // height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  .cubespinner {
+    transform-style: preserve-3d;
+    animation-name: spincube;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    transform-origin: 100px 100px 0;
+    margin-left: calc(50% - 100px);
+
+    div {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      border: 1px solid #ccc;
+      background: rgba(255, 255, 255, .4);
+      font-size: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 0 20px 0 lightyellow;
+      transform: translateZ(-100px);
+    }
+
+
+    .front {
+      transform: translateZ(100px) rotateY(0deg);
+      color: $angular-color;
+    }
+
+    .right {
+      transform: rotateY(90deg) translateZ(100px);
+      color: $html5-color;
+    }
+
+    .back {
+      transform: rotateY(180deg) translateZ(100px);
+      color: #28a4d9;
+    }
+
+    .left {
+      transform: rotateY(-90deg) translateZ(100px);
+      color: #5ed4f4;
+    }
+
+    .top {
+      transform: rotateX(90deg) translateZ(100px);
+      color: #efd81d;
+    }
+
+    .bottom {
+      transform: rotateX(-90deg) translateZ(100px);
+      color: #ec4d28;
+    }
+  }
+}
+
+@keyframes spincube {
+
+  from,
+  to {
+    @include face(front);
+  }
+
+  16% {
+    @include face(right);
+  }
+
+  33% {
+    @include face(back);
+  }
+
+  50% {
+    @include face(left);
+  }
+
+  66% {
+    @include face(top);
+  }
+
+  83% {
+    @include face(bottom);
+  }
+}
+
+
+/*** Start Extra small devices ***/
+@include breakPoint(mobile) {
+  .stage-cube-cont {
+    width: 90%;
+    margin-top: 0; 
+    min-height: 300px;
+    display: block;
+    overflow: unset;
+    margin-top: 2rem;
+
+  }
+}
+  
+/*** End Extra small devices ***/
+
+
+/*** Small devices ***/
+@include breakPoint(small){
+  .stage-cube-cont {
+    width: 90%;
+    margin-top: 0; 
+    min-height: 300px;
+    display: block;
+    overflow: unset;
+
+  }
+
+}
+
+/*** End Small devices ***/

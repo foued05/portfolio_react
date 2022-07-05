@@ -1,0 +1,233 @@
+@import '../../assets/Styles/colors';
+@import '../../assets/Styles/helpers';
+
+.page {
+    width: 100%;
+    height: auto;
+    position: absolute;
+}
+.full-section {
+    position: relative;
+    &::before {
+      @include htmlTags('<section>', 40px, 90px);
+    }
+    &::after {
+        @include htmlTags('</section>', '', 90px);
+      content: '</section>';
+      bottom: 40px;
+    }
+  }
+
+
+
+.tags {
+    color: $light-gray-color;
+    opacity: .6;
+    position: absolute;
+    left: 90px;
+    font-size: 18px;
+    font-family: 'La Belle Aurore';
+}
+
+.top-tags {
+    bottom: auto;
+    top: 35px;
+    .top-tag-body {
+        margin-left: 10px;
+    }
+}
+.bottom-tag-html {
+    margin-left: -20px;
+   
+}
+
+.container {
+    width: 100%;
+    will-change: contents;
+    // height: 90%;
+    // min-height: 100vh;
+    opacity: 0;
+    margin: 0 auto;
+    transform-style: preserve-3d;
+    animation: fadeIn 1s 1s forwards;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding-right: 20px;
+}
+
+.container.about-page, .container.contact-page, .container.skills-page {
+    .text-zone {
+    margin: 70px 0 70px 120px;
+    max-height: 90%;
+    flex: 1 1 49%;
+
+        h1 {
+            font-size: 53px;
+            font-family: 'Coolvetica';
+            color: $primary-cyan-color;
+            font-weight: 400;
+            margin-top: 0;
+            position: relative;
+            margin-bottom: 40px;
+            left: -10px;
+
+            &::before {
+                @include htmlTags('<h1>',-10px, -10px);
+                line-height: 18px;
+            }
+
+            &::after {
+                @include htmlTags('</h1>','', -10px);
+                bottom: -20px;
+                line-height: 18px;
+            }
+
+        }
+
+        p {
+            font-size: 13px;
+            color: #fff;
+            font-family: sans-serif;
+            font-weight: 300;
+            max-width: fit-content;
+            animation: pulse 1s;
+
+            &:nth-of-type(1){
+                animation-delay: 1.1s;
+            }
+            &:nth-of-type(2){
+                animation-delay: 1.2s;
+            }
+            &:nth-of-type(3){
+                animation-delay: 1.3s;
+            }
+
+        }
+        .animated-letter-hover {
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+}
+
+/*** Start Extra small devices ***/
+@include breakPoint(mobile){
+    .tags {
+       left: .7rem;
+       &.top-tags {
+         top: 6.3rem;
+       }
+    }
+    .page {
+        width: 100%;
+        height: 100%;
+        // position: absolute;
+    }
+    .full-section {
+        position: relative;
+        &::before {
+          @include htmlTags('<section>', 40px, 2rem);
+        }
+        &::after {
+            @include htmlTags('</section>', '', 2rem);
+          content: '</section>';
+          bottom: 0px;
+        }
+      }
+    
+    
+    .container {
+        flex-direction: column;
+        // padding: 7rem 0;
+        padding-top: 7rem;
+        margin: 1rem  0;
+        min-height: 100vh;
+    }
+    
+    .container.about-page, .container.contact-page, .container.skills-page {
+        .text-zone {
+        width: 90%;
+        margin: 0 auto;
+        max-height: 90%;
+        padding: 1rem;
+
+        h1 {
+            left: 0px;
+        }
+        
+            .animated-letter-hover {
+                &:hover {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+/*** End Extra small devices ***/
+
+
+/*** Start Small devices (tablets) ***/
+@include breakPoint(small){
+   
+    .full-section {
+        position: relative;
+        &::before {
+          @include htmlTags('<section>', 40px, 1.2rem);
+        }
+        &::after {
+            @include htmlTags('</section>', '', 1.2rem);
+          content: '</section>';
+          bottom: 0px;
+        }
+      }
+
+      .tags {
+          left: 3rem;
+         
+      }
+      .top-tags {
+        // bottom: auto;
+        top: 6rem;
+        left: 1rem;
+        .top-tag-body {
+            margin-left: 0;
+        }
+    }
+    
+    
+    .container {
+        flex-direction: column;
+        // padding: 7rem 0;
+        padding-top: 7rem;
+        margin: 1rem  0;
+        height: auto;
+        min-height: 100vh;
+    }
+    
+    .container.about-page, .container.contact-page, .container.skills-page {
+        .text-zone {
+        width: 90%;
+        margin: 0 auto;
+        padding: 1rem;
+
+        h1 {
+            left: 0px;
+        }
+        
+            .animated-letter-hover {
+                &:hover {
+                    color: #fff;
+                }
+            }
+        }
+    }
+    .container.contact-page {
+        .text-zone {
+            margin-top: 9rem;
+        }
+    }
+}
+/*** End Small devices (tablets) ***/

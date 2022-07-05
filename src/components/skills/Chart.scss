@@ -1,0 +1,28 @@
+@import '../../assets/Styles/colors';
+
+$loop-persentage : 100;
+
+
+
+@for $i from 1 through $loop-persentage {
+  .chart-width-#{$i}{
+      width: percentage($i / 100);
+  }
+
+}
+
+#react {
+    background-color: $react-color;
+}
+#css {
+    background-color: $css3-color;
+}
+#html {
+    background-color: $html5-color;
+}
+#git {
+    background-color: $git-color;
+}
+#javaScript {
+    background-color: $js-color;
+}

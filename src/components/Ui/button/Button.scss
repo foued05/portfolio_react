@@ -1,0 +1,83 @@
+@import '../../../assets/Styles/colors';
+@import '../../../assets/Styles/helpers';
+
+%spans {
+  position: absolute;
+     top: 0;
+     left: 0;
+     height: 100%;
+}
+
+#button {
+    height: 5rem;
+    width: 22rem;
+    position: relative;
+    overflow: hidden;
+    transition: all .4s linear;
+    background: none;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    cursor: pointer;
+    
+    &:hover {
+      .bg {
+        width: 106%;
+      }
+      .text {
+        color: $dark-gray-color;
+    }
+    }
+    .bg {
+     @extend %spans;
+     width: 0px;
+     left: -5%;
+     z-index: 2;
+     background-color: $primary-cyan-color;
+     transition: all .4s ease-out;
+     transform: skewX(-10deg);
+    
+    }
+    .base {
+      @extend %spans;
+      z-index: 3;
+      left: 0;
+      width: 100%;
+      border: 1px solid $primary-cyan-color;
+    }
+    .text {
+      @extend %spans;
+      z-index: 4;
+      left: 50%;
+      transform: translateX(-50%);
+      color: $primary-cyan-color;
+      line-height: 5rem;
+      font-size: 1.3rem;
+    }
+}
+
+@include breakPoint(mobile) {
+  #button {
+    width: 17rem ;
+    height: 4rem;
+    padding: .7rem 1rem;
+    
+    .text{
+      font-size: 1.1rem;
+      line-height: 4rem;
+    }
+  }
+
+}
+@include breakPoint(small) {
+  #button {
+    width: 20rem ;
+    height: 4.5rem;
+    .text{
+      font-size: 1.2rem;
+      line-height: 4.5rem;
+    }
+  }
+
+}
+

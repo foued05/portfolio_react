@@ -1,0 +1,28 @@
+@import '../../assets/Styles/colors';
+
+%animatedLetterInitials {
+    display: inline-block;
+    min-width: 10px;
+}
+
+.animated-letter {
+    @extend %animatedLetterInitials ;
+    opacity: 0;
+    
+    animation: bounceIn 1s 1s forwards;
+}
+
+.animated-letter-hover {
+    @extend %animatedLetterInitials ;
+    animation-fill-mode: both;
+    &:hover {
+        color: $primary-cyan-color;
+        animation: rubberBand 1s;
+    }
+}
+
+@for $i from 1 through 35 {
+    .animated-letter._#{$i} {
+    animation-delay: #{$i / 10}s;
+    }
+}

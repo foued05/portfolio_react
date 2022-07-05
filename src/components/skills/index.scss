@@ -1,0 +1,84 @@
+@import '../../assets/Styles/colors';
+@import '../../assets/Styles/helpers';
+
+
+.page-skills {
+    padding: 100px 0;
+    min-height: 100vh;
+}
+
+.tech-tag , .link{
+    color: $primary-cyan-color;
+    margin-left: 4px;
+
+}
+
+.page-skills .text-zone{
+    flex: 1 1 48%;
+}
+.link {
+    text-decoration: none;
+}    
+
+/* Skills Details */
+
+.skills-details {
+    flex: 0 1 40%;
+    margin: 0 auto;
+    animation: fadeIn 1s 1.7s forwards;
+    .chart {
+        margin: 2.5rem 0;
+        overflow: hidden;
+        span{
+            font-weight: bold;
+            font-family: 'Josefin Sans';
+            color: #fff;
+            font-size: 20px;
+            text-transform: capitalize;
+          }
+          footer {
+              width: 100%;
+              height: 2px;
+              background-color: #888;
+              div {
+               height: 100%;
+               opacity: 0;
+               background-color: $react-color;
+               animation: slidL 1s 1.2s forwards;
+               transition: all .3s linear;
+              }
+          }
+    }
+   
+}
+
+
+@keyframes slidL {
+    0%{
+        opacity: 1;
+        transform: translateX(-100%);
+    }
+
+    100%{
+       transform: translateX(0);
+       opacity: 1;
+    }
+    
+}
+
+/*** Extra small devices ***/
+@include breakPoint(mobile) {
+    .skills-details {
+        width: 90%;
+    }
+}
+/*** End extra small devices ***/
+
+
+/*** Small devices ***/
+@include breakPoint(small) {
+    .skills-details {
+        width: 90%;
+    }
+}
+/*** End small devices ***/
