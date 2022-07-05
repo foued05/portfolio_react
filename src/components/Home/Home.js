@@ -110,7 +110,7 @@ const Home = () => {
             <Button text="CONTACT ME" />
           </Link>
         </div>
-        <img src={require('../../assets/images/foued3.png')} className="foued-img" />
+        <img src={require('../../assets/images/foued.png')} className="foued-img" />
       </div>
       <About />
       <MyWork />
