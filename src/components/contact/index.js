@@ -48,7 +48,7 @@ const Contact = () => {
               I am interested in a new job opportunity, If you are looking for a motivated, creative and dynamic person do not hesitate to contact me.
             </p>
             <p>
-              E-mail: <span className='cv'>amamifoued8@gmail.com</span>
+              E-mail: <span className='cv'>fouedamami8@gmail.com</span>
             </p>
             <p>
               Phone number: <span className='cv'>(+216) 92 54 32 26</span>
