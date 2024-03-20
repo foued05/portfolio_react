@@ -48,7 +48,7 @@ const projects = [
     id:'p1' ,
     name: 'Tic Tac Toe',
     header: 'Tic Tac Toe',
-    subHeader: 'Build a Tic-tac-toe game.',
+    subHeader: 'Développement d\'un jeu Tic-tac-toe.',
     technologies: ['Html', 'Css','TypeScript'],
     details:
       '',
@@ -65,10 +65,10 @@ const projects = [
     id:'p4' ,
     name: 'GEOTRACKER',
     header: 'GEOTRACKER',
-    subHeader: 'My graduation project',
+    subHeader: 'mon Projet Fin d\'Etude',
     technologies: ['Angular', 'SpringBoot', 'SQL'],
     details:
-      'My graduation project in ISAMM to develop a platform for "environmental management of trucks", the objective is after authentication employees of transport companies can locate their trucks in real time, control the speed, make a geographical fence for their trucks (Geofencing), manage company data, control and modify the access permissions of the accounts of their employees in this platform.',
+      'Mon projet de fin d\'études à l\'ISAMM: développer une plateforme de "gestion environnementale des camions", l\'objectif est qu\'après authentification les salariés des entreprises de transport puissent localiser leurs camions en temps réel, contrôler la vitesse, faire une clôture géographique pour leurs camions (Geofencing), gérer données de l\'entreprise, contrôler et modifier les autorisations d\'accès aux comptes de leurs employés dans cette plateforme.',
     homePage: Geotracker,
     images: [
       Geotracker,

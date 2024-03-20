@@ -17,21 +17,19 @@ const About = () => {
         <div className="text-zone">
           <Header
             letterClass={letterClass}
-            strArray={['A', 'b', 'o', 'u', 't', ' ', 'm', 'e']}
+            strArray={['P', 'r', 'o', 'f', 'i', 'l']}
             idx={15}
           />
           <div className="paraContainer">
             <p>
-            My name is Foued Amami, I am 23 years old, graduated in computer 
-            science and multimedia at the Higher Institute of Multimedia Arts of Manouba (ISAMM) 
-            and I am a computer engineering student at the Private Higher School of Engineers and Technologies (ESPRIT).
+            Un développeur Full-Stack motivé et expérimenté avec une grande adaptabilité et une
+            expérience éprouvée dans la fourniture de solutions innovantes dans divers domaines.
+            Connu pour sa polyvalence, de la conception UI à la mise en œuvre d'une logique métier,
+            traite de solides compétences techniques en C#, ASP.NET et SQL.
+
             </p>
             <p>
-            I am a Full-Stack developer with a solid knowledge of programming languages Frontend & Backend passionate about new technologies with an ability to adapt, 
-            my goal is to be the developer who gives added value to his team and succeeds in solving complex problems.
-            </p>
-            <p>
-              <a href={require('../../assets/Fouedamami.pdf')} target="_blank" className='cv'>Click here to see my CV</a>
+              <a href={require('../../assets/Foued Amami FR.pdf')} target="_blank" className='cv'>Click here to see my CV</a>
             </p>
           </div>
         </div>

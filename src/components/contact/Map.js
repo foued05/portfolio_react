@@ -8,7 +8,7 @@ const Map = () => {
         <div className="info-map">
           Foued Amami,
           <br />
-          Ezzahra, Tunis, Tunisia<br />
+          Ezzahra, Tunis, Tunisie<br />
           <br />
           <span>
             <a href='mailto:fouedamami8@gmail.com' target='_blank' rel='noreferrer'>fouedamami8@gmail.com</a>

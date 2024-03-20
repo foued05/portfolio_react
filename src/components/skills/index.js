@@ -10,7 +10,7 @@ import './index.scss'
 
 const Skills = () => {
   const letterClass = useLetteranimation(3000)
-  const headerText = ['Skills']
+  const headerText = ['Compétences']
  
   return (
       <>
@@ -60,14 +60,12 @@ const Skills = () => {
         </div>
       </div>
       <div className='skills-details'>
-     <Chart width={100} skill='Html, CSS, Bootstrap'/>
-     <Chart width={100} skill='Javascript, JQuery, ReactJS'/>
-     <Chart width={100} skill='Typescript'/>
-     <Chart width={100} skill='Angular'/>
-     <Chart width={100} skill='JAVA, Springboot'/>
-     <Chart width={100} skill='NodeJS'/>
-     <Chart width={100} skill='SQL'/>
-     <Chart width={100} skill='MongoDB'/>
+     <Chart width={90} skill='Full-stack .NET Development'/>
+     <Chart width={100} skill='C# | ASP.NET Core'/>
+     <Chart width={70} skill='SQL Server | T-SQL'/>
+     <Chart width={70} skill='PostegreSQL | PL/pgSQL'/>
+     <Chart width={55} skill='Cloud Services (Microsoft Azure)'/>
+     <Chart width={90} skill='Typescript | Angular'/>
       </div>
     </div>
     <Loader />

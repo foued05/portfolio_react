@@ -37,13 +37,13 @@ const MyWork = () => {
       <div className={`container my-work-page ${sectionClass}`}>
         <div className="text-zone">
           <Header
-            strArray={[ 'M', 'y', ' ', 'P', 'o', 'r', 't', 'f', 'o', 'l', 'i', 'o']}
+            strArray={[ 'M', 'o', 'n', ' ', 'P', 'o', 'r', 't', 'f', 'o', 'l', 'i', 'o']}
             idx={15}
             letterClass={letterClass}
           />
         <div className="paraContainer">
           <p>
-            A small gallery of recent projects chosen by me.I learned a lot of interesting tricks doing these projects, I have been always trying to apply all my new knowledge on each new project.
+            Une petite galerie de projets récents.
           </p>
         </div>
         </div>
@@ -66,7 +66,7 @@ const MyWork = () => {
                       className="flat-button"
                       onClick={() => learnMoreBtnHandler(project.id)}
                     >
-                      Learn more
+                      Détail
                     </button>
                   </div>
                   <img src={project.homePage} alt={project.name} />

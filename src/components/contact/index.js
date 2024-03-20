@@ -39,25 +39,22 @@ const Contact = () => {
       <div className={`container contact-page `}>
         <div className="text-zone">
           <Header
-            strArray={['C', 'o', 'n', 't', 'a', 'c', 't', ' ', 'm', 'e']}
+            strArray={['C', 'o', 'n', 't', 'a', 'c', 't']}
             letterClass={letterClass}
             idx={15}
           />
           <div className="paraContainer">
             <p>
-              I am interested in a new job opportunity, If you are looking for a motivated, creative and dynamic person do not hesitate to contact me.
-            </p>
-            <p>
               E-mail: <span className='cv'>fouedamami8@gmail.com</span>
             </p>
             <p>
-              Phone number: <span className='cv'>(+216) 92 54 32 26</span>
+            Numéro de téléphone: <span className='cv'>(+216) 92 54 32 26</span>
             </p>
             <p>
-              <a href="https://www.linkedin.com/in/foued-amami-5a9105186/" target="_blank" className='cv'>Click here to see my LinkedIn profile.</a>
+              <a href="https://www.linkedin.com/in/foued-amami-5a9105186/" target="_blank" className='cv'>Cliquez ici pour voir mon profil LinkedIn.</a>
             </p>
             <p>
-              <a href="https://github.com/foued05" target="_blank" className='cv'>Click here to see my GitHub profile.</a>
+              <a href="https://github.com/foued05" target="_blank" className='cv'>Cliquez ici pour voir mon profil GitHub.</a>
             </p>
           </div>
         </div>

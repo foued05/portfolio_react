@@ -43,53 +43,55 @@ const Home = () => {
           <span>
             <FontAwesomeIcon icon={faArrowDown} color="#c5c6c7" />
           </span>
-          <span className="scroll-text">scroll down</span>
+          <span className="scroll-text">défiler vers le bas</span>
         </div>
         <div className="scroll-down right">
           <span>
             <FontAwesomeIcon icon={faArrowDown} color="#c5c6c7" />
           </span>
-          <span className="scroll-text">scroll down</span>
+          <span className="scroll-text">défiler vers le bas</span>
         </div>
         <div className="text-zone">
           <h1>
-            <span className={letterClass}>H</span>
-            <span className={`${letterClass} _10`}>i</span>
-            <span className={`${letterClass} _11`}>,</span>
-            <span className={`${letterClass} _11`}> </span>
-            <span className={`${letterClass} _12`}>I</span>
-            <span className={`${letterClass} _13`}>'</span>
-            <span className={`${letterClass} _14`}>m</span>
-            <span className={`${letterClass} _14`}> </span>
             <span className={letterClass}>F</span>
-            <span className={`${letterClass} _15`}>o</span>
+            <span className={`${letterClass} _10`}>o</span>
             <span className={`${letterClass} _11`}>u</span>
             <span className={`${letterClass} _11`}>e</span>
             <span className={`${letterClass} _12`}>d</span>
-            <span className={`${letterClass} _11`}>,</span>
-            <br />
-            <span className={`${letterClass} _12`}>A</span>
             <span className={`${letterClass} _13`}> </span>
-            <span className={`${letterClass} _13`}>F</span>
+            <span className={letterClass}>A</span>
+            <span className={`${letterClass} _14`}>m</span>
+            <span className={`${letterClass} _15`}>a</span>
+            <span className={`${letterClass} _16`}>m</span>
+            {/* <span className={letterClass}>F</span> */}
+            <span className={`${letterClass} _17`}>i</span>
+            <span className={`${letterClass} _18`}>,</span>
+            {/* <span className={`${letterClass} _11`}>e</span>
+            <span className={`${letterClass} _12`}>d</span>
+            <span className={`${letterClass} _11`}>,</span> */}
+            <br />
+            <span className={`${letterClass} _12`}>D</span>
+            <span className={`${letterClass} _13`}>é</span>
+            <span className={`${letterClass} _13`}>v</span>
+            <span className={`${letterClass} _14`}>e</span>
+            <span className={`${letterClass} _13`}>l</span>
+            <span className={`${letterClass} _14`}>o</span>
+            <span className={`${letterClass} _13`}>p</span>
+            <span className={`${letterClass} _14`}>p</span>
+            <span className={`${letterClass} _13`}>e</span>
+            <span className={`${letterClass} _14`}>u</span>
+            <span className={`${letterClass} _13`}>r</span>
+            <br />
+            <span className={`${letterClass} _14`}>F</span>
             <span className={`${letterClass} _14`}>u</span>
             <span className={`${letterClass} _13`}>l</span>
             <span className={`${letterClass} _14`}>l</span>
             <span className={`${letterClass} _13`}>-</span>
             <span className={`${letterClass} _14`}>S</span>
-            <span className={`${letterClass} _13`}>t</span>
-            <span className={`${letterClass} _14`}>a</span>
-            <span className={`${letterClass} _13`}>c</span>
+            <span className={`${letterClass} _14`}>t</span>
+            <span className={`${letterClass} _13`}>a</span>
+            <span className={`${letterClass} _14`}>c</span>
             <span className={`${letterClass} _14`}>k</span>
-            <br />
-            <span className={`${letterClass} _14`}>D</span>
-            <span className={`${letterClass} _13`}>e</span>
-            <span className={`${letterClass} _14`}>v</span>
-            <span className={`${letterClass} _13`}>e</span>
-            <span className={`${letterClass} _14`}>l</span>
-            <span className={`${letterClass} _14`}>o</span>
-            <span className={`${letterClass} _13`}>p</span>
-            <span className={`${letterClass} _14`}>e</span>
-            <span className={`${letterClass} _14`}>r</span>
           </h1>
             {/* <AnimatedLetters
               letterClass={letterClass}
@@ -104,13 +106,13 @@ const Home = () => {
             /> */}
           
           <div className="paraContainer">
-            <p>WEB & Mobile Developer</p>
+            <p>Développeur .NET C#</p>
           </div>
           <Link to="/contact" className="flat-button">
             <Button text="CONTACT ME" />
           </Link>
         </div>
-        <img src={require('../../assets/images/foued.png')} className="foued-img" />
+        <img src={require('../../assets/images/foued.jpeg')} className="foued-img" />
       </div>
       <About />
       <MyWork />
