@@ -1,11 +1,11 @@
 //Kasper Template Samples Images
-import UserManagement from '../../assets/images/react1.png'
+import UserManagement from '../../assets/images/What-is-gRPC_.jpg'
 
 //Rest Countries Api Images
 import TicTacToe from '../../assets/images/ticTacToe.png'
 
 //Space Tourism Images
-import CommunicationPlatform from '../../assets/images/tt1.png'
+import CommunicationPlatform from '../../assets/images/logo-png-1.png'
 
 //Interactive Comments Images
 import Geotracker from '../../assets/images/25.png'
@@ -17,29 +17,28 @@ import Geotracker5 from '../../assets/images/truckstopped.PNG'
 const projects = [
   {
     id:'p2' ,
-    name: 'User Management',
-    header: 'User Management',
-    subHeader: 'Create an application that allows to list users and add a new one, using Fake REST API JSONPlaceholder.',
-    technologies: ['Html', 'Css', 'React'],
+    name: 'gRPC',
+    header: 'gRPC',
+    subHeader: 'gRPC .NET Core',
+    technologies: ['.NET Core', 'gRPC'],
     details:
-      'My first project with react',
+      'Création des services gRPC avec .NET Core pour streaming les données',
     homePage: UserManagement,
-    live: 'https://firstreactappfoued.netlify.app/',
-    sourceCode: 'https://github.com/foued05/first_react_app.git',
+    sourceCode: 'https://github.com/foued05/GrpcService.git',
     images: [
       UserManagement,
     ],
   },
   {
     id:'p3' ,
-    name: 'Communication Platform',
-    header: 'Communication Platform',
+    name: 'XUnit & Specflow',
+    header: 'XUnit & Specflow',
     subHeader: '',
-    technologies: ['NodeJS', 'MongoDB'],
+    technologies: ['.NET Core', 'Specflow'],
     details:
-      'Creation APIs',
+      'Création des tests unitiaire avec XUnit .NET et Specflow for BDD',
     homePage: CommunicationPlatform,
-    sourceCode: 'https://github.com/foued05/first_project_node.git',
+    sourceCode: 'https://github.com/foued05/XUnit_Specflow_dotnet.git',
     images: [
       CommunicationPlatform
     ],
