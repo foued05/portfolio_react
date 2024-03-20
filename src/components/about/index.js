@@ -29,7 +29,7 @@ const About = () => {
 
             </p>
             <p>
-              <a href={require('../../assets/Foued Amami FR.pdf')} target="_blank" className='cv'>Click here to see my CV</a>
+              <a href={require('../../assets/Foued Amami FR.pdf')} target="_blank" className='cv'>Cliquez ici pour consulter mon CV</a>
             </p>
           </div>
         </div>

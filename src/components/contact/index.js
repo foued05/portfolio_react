@@ -51,10 +51,10 @@ const Contact = () => {
             Numéro de téléphone: <span className='cv'>(+216) 92 54 32 26</span>
             </p>
             <p>
-              <a href="https://www.linkedin.com/in/foued-amami-5a9105186/" target="_blank" className='cv'>Cliquez ici pour voir mon profil LinkedIn.</a>
+              <a href="https://www.linkedin.com/in/foued-amami-5a9105186/" target="_blank" className='cv'>Cliquez ici pour consulter mon profil LinkedIn.</a>
             </p>
             <p>
-              <a href="https://github.com/foued05" target="_blank" className='cv'>Cliquez ici pour voir mon profil GitHub.</a>
+              <a href="https://github.com/foued05" target="_blank" className='cv'>Cliquez ici pour consulter mon profil GitHub.</a>
             </p>
           </div>
         </div>
