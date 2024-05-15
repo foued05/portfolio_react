@@ -2,7 +2,7 @@ import Loader from 'react-loaders'
 import { Link } from 'react-router-dom'
 import useLetteranimation from '../../hooks/use-letterAnimation'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faCss3,faAngular,faHtml5,faJsSquare,faReact, faJava} from '@fortawesome/free-brands-svg-icons'
+import {faCss3, faAngular, faJsSquare, faMicrosoft, faCloudflare, faGithub} from '@fortawesome/free-brands-svg-icons'
 import Header from '../Ui/header/Header'
 import Chart from './Chart'
 import './index.scss'
@@ -38,16 +38,16 @@ const Skills = () => {
         <div className="stage-cube-cont">
           <div className="cubespinner">
             <div className="front">
-              <FontAwesomeIcon icon={faJava} />
+              <FontAwesomeIcon icon={faMicrosoft} />
             </div>
             <div className="right">
-              <FontAwesomeIcon icon={faHtml5} />
+              <FontAwesomeIcon icon={faGithub} />
             </div>
             <div className="back">
               <FontAwesomeIcon icon={faCss3} />
             </div>
             <div className="left">
-              <FontAwesomeIcon icon={faReact} />
+              <FontAwesomeIcon icon={faCloudflare} />
             </div>
             <div className="top">
               <FontAwesomeIcon icon={faJsSquare} />
