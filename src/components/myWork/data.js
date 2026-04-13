@@ -62,7 +62,7 @@ const projects = [
     technologies: ['React', 'Vercel'],
     details:
       'Créé un Portfolio et le déployé via Vercel',
-    homePage: CommunicationPlatform,
+    homePage: cc,
     sourceCode: 'https://github.com/foued05/portfolio_react.git',
     images: [
       cc
@@ -91,7 +91,7 @@ const projects = [
     technologies: ['Angular','TypeScript', 'NodeJS', 'ExpressJS', 'Golang', 'FastApi', 'MongoDb', 'PostegreSQL', 'Kubernetes'],
     details:
       '',
-    homePage: TicTacToe,
+    homePage: PC1,
     sourceCode: 'https://github.com/foued05/Storage_Pricing_Calculator.git',
     images: [
       PC1,
