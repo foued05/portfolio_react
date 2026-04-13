@@ -27,34 +27,6 @@ import PC8 from '../../assets/images/20.PNG'
 import cc from '../../assets/images/ccc.PNG'
 const projects = [
   {
-    id:'p2' ,
-    name: 'gRPC',
-    header: 'gRPC',
-    subHeader: 'gRPC .NET Core',
-    technologies: ['.NET Core', 'gRPC'],
-    details:
-      'Création des services gRPC avec .NET Core pour streaming les données',
-    homePage: UserManagement,
-    sourceCode: 'https://github.com/foued05/GrpcService.git',
-    images: [
-      UserManagement,
-    ],
-  },
-  {
-    id:'p3' ,
-    name: 'XUnit & Specflow',
-    header: 'XUnit & Specflow',
-    subHeader: '',
-    technologies: ['.NET Core', 'Specflow'],
-    details:
-      'Création des tests unitiaire avec XUnit .NET et Specflow for BDD',
-    homePage: CommunicationPlatform,
-    sourceCode: 'https://github.com/foued05/XUnit_Specflow_dotnet.git',
-    images: [
-      CommunicationPlatform
-    ],
-  },
-  {
     id:'p6' ,
     name: 'Porfolio',
     header: 'Portfolio',
@@ -120,6 +92,34 @@ const projects = [
       Geotracker3,
       Geotracker4,
       Geotracker5
+    ],
+  },
+  {
+    id:'p2' ,
+    name: 'gRPC',
+    header: 'gRPC',
+    subHeader: 'gRPC .NET Core',
+    technologies: ['.NET Core', 'gRPC'],
+    details:
+      'Création des services gRPC avec .NET Core pour streaming les données',
+    homePage: UserManagement,
+    sourceCode: 'https://github.com/foued05/GrpcService.git',
+    images: [
+      UserManagement,
+    ],
+  },
+  {
+    id:'p3' ,
+    name: 'XUnit & Specflow',
+    header: 'XUnit & Specflow',
+    subHeader: '',
+    technologies: ['.NET Core', 'Specflow'],
+    details:
+      'Création des tests unitiaire avec XUnit .NET et Specflow for BDD',
+    homePage: CommunicationPlatform,
+    sourceCode: 'https://github.com/foued05/XUnit_Specflow_dotnet.git',
+    images: [
+      CommunicationPlatform
     ],
   },
 ]

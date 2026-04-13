@@ -11,7 +11,7 @@ const Map = () => {
           Ezzahra, Tunis, Tunisie<br />
           <br />
           <span>
-            <a href='mailto:fouedamami8@gmail.com' target='_blank' rel='noreferrer'>fouedamami8@gmail.com</a>
+            <a href='mailto:amamifoued00@gmail.com' target='_blank' rel='noreferrer'>amamifoued00@gmail.com</a>
           </span>
         </div>
         <MapContainer center={[36.740493, 10.302977]} zoom={13} scrollWheelZoom={false} >
