@@ -106,7 +106,7 @@ const Home = () => {
             /> */}
           
           <div className="paraContainer">
-            <p>Développeur Full Stack</p>
+            <p>Développeur Full Stack JS</p>
           </div>
           <Link to="/contact" className="flat-button">
             <Button text="Portfolio" />
