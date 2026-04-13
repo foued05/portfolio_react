@@ -35,6 +35,7 @@ const projects = [
     details:
       'Créé un Portfolio et le déployé via Vercel',
     homePage: cc,
+    live: 'https://foued-amami-prt.vercel.app/',
     sourceCode: 'https://github.com/foued05/portfolio_react.git',
     images: [
       cc
