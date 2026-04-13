@@ -15,7 +15,7 @@ import Geotracker3 from '../../assets/images/23.PNG'
 import Geotracker4 from '../../assets/images/login.PNG'
 import Geotracker5 from '../../assets/images/truckstopped.PNG'
 
-import PC1 from '../../assets/images/19.png'
+import PC1 from '../../assets/images/19.PNG'
 import PC2 from '../../assets/images/rzrzr (1).PNG'
 import PC3 from '../../assets/images/6 (1).PNG'
 import PC4 from '../../assets/images/5 (2).PNG'
