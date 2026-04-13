@@ -106,10 +106,10 @@ const Home = () => {
             /> */}
           
           <div className="paraContainer">
-            <p>Développeur .NET C#</p>
+            <p>Développeur Full Stack</p>
           </div>
           <Link to="/contact" className="flat-button">
-            <Button text="CONTACT ME" />
+            <Button text="Portfolio" />
           </Link>
         </div>
         <img src={require('../../assets/images/foued.jpeg')} className="foued-img" />
