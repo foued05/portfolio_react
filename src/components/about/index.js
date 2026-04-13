@@ -22,14 +22,14 @@ const About = () => {
           />
           <div className="paraContainer">
             <p>
-            Un développeur Full-Stack motivé et expérimenté avec une grande adaptabilité et une
-            expérience éprouvée dans la fourniture de solutions innovantes dans divers domaines.
-            Connu pour sa polyvalence, de la conception UI à la mise en œuvre d'une logique métier,
-            traite de solides compétences techniques en C#, ASP.NET et SQL.
+            Ingénieur Full Stack avec une solide expérience dans la conception, le développement et la maintenance d'applications.
+            Expertise confirmée en développement des application. Forte capacité à mener des activités de développement 
+            et de maintenance de haute qualité, garantissant la stabilité des applications. Passionné par les architectures 
+            propres, l'optimisation des performances et l'amélioration continue.
 
             </p>
             <p>
-              <a href={require('../../assets/Foued Amami FR.pdf')} target="_blank" className='cv'>Cliquez ici pour consulter mon CV</a>
+              <a href={require('../../assets/Foued_AMAMI_Developpeur_FullStack (1).pdf')} target="_blank" className='cv'>Cliquez ici pour consulter mon CV</a>
             </p>
           </div>
         </div>

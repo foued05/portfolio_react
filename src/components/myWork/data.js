@@ -11,9 +11,20 @@ import CommunicationPlatform from '../../assets/images/logo-png-1.png'
 import Geotracker from '../../assets/images/25.png'
 import Geotracker1 from '../../assets/images/addmission.PNG'
 import Geotracker2 from '../../assets/images/dashboard.PNG'
-import Geotracker3 from '../../assets/images/deletecompany.PNG'
+import Geotracker3 from '../../assets/images/23.PNG'
 import Geotracker4 from '../../assets/images/login.PNG'
 import Geotracker5 from '../../assets/images/truckstopped.PNG'
+
+import PC1 from '../../assets/images/19.png'
+import PC2 from '../../assets/images/rzrzr (1).PNG'
+import PC3 from '../../assets/images/6 (1).PNG'
+import PC4 from '../../assets/images/5 (2).PNG'
+import PC5 from '../../assets/images/11.PNG'
+import PC6 from '../../assets/images/10.PNG'
+import PC7 from '../../assets/images/18.PNG'
+import PC8 from '../../assets/images/20.PNG'
+
+import cc from '../../assets/images/ccc.PNG'
 const projects = [
   {
     id:'p2' ,
@@ -44,6 +55,20 @@ const projects = [
     ],
   },
   {
+    id:'p6' ,
+    name: 'Porfolio',
+    header: 'Portfolio',
+    subHeader: '',
+    technologies: ['React', 'Vercel'],
+    details:
+      'Créé un Portfolio et le déployé via Vercel',
+    homePage: CommunicationPlatform,
+    sourceCode: 'https://github.com/foued05/portfolio_react.git',
+    images: [
+      cc
+    ],
+  },
+  {
     id:'p1' ,
     name: 'Tic Tac Toe',
     header: 'Tic Tac Toe',
@@ -58,8 +83,27 @@ const projects = [
       TicTacToe
     ],
   },
-  
-  
+  {
+    id:'p5' ,
+    name: 'Storage Pricing Calculator',
+    header: 'Storage Pricing Calculator',
+    subHeader: 'développer une plateforme pour calculer les prix dans le stockage dans un Cloud native',
+    technologies: ['Angular','TypeScript', 'NodeJS', 'ExpressJS', 'Golang', 'FastApi', 'MongoDb', 'PostegreSQL', 'Kubernetes'],
+    details:
+      '',
+    homePage: TicTacToe,
+    sourceCode: 'https://github.com/foued05/Storage_Pricing_Calculator.git',
+    images: [
+      PC1,
+      PC2,
+      PC3,
+      PC4,
+      PC5,
+      PC6,
+      PC7,
+      PC8,
+    ],
+  },
   {
     id:'p4' ,
     name: 'GEOTRACKER',

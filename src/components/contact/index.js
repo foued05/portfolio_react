@@ -45,10 +45,10 @@ const Contact = () => {
           />
           <div className="paraContainer">
             <p>
-              E-mail: <span className='cv'>fouedamami8@gmail.com</span>
+              E-mail: <span className='cv'>amamifoued00@gmail.com</span>
             </p>
             <p>
-            Numéro de téléphone: <span className='cv'>(+216) 92 54 32 26</span>
+            Numéro de téléphone: <span className='cv'>(+216) 97 27 02 26</span>
             </p>
             <p>
               <a href="https://www.linkedin.com/in/foued-amami-5a9105186/" target="_blank" className='cv'>Cliquez ici pour consulter mon profil LinkedIn.</a>
