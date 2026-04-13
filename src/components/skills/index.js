@@ -60,12 +60,15 @@ const Skills = () => {
         </div>
       </div>
       <div className='skills-details'>
-     <Chart width={90} skill='Full-stack .NET Development'/>
-     <Chart width={100} skill='C# | ASP.NET Core'/>
-     <Chart width={70} skill='SQL Server | T-SQL'/>
-     <Chart width={70} skill='PostegreSQL | PL/pgSQL'/>
-     <Chart width={55} skill='Cloud Services (Microsoft Azure)'/>
-     <Chart width={90} skill='Typescript | Angular'/>
+        <Chart width={90} skill='Typescript | Angular'/>
+        <Chart width={90} skill='Javascript | JQuery'/>
+        <Chart width={80} skill='NodeJS | ExpressJS'/>
+        <Chart width={70} skill='React'/>
+        <Chart width={90} skill='Full-stack Development'/>
+        <Chart width={100} skill='C# | ASP.NET Core'/>
+        <Chart width={80} skill='SQL Server | T-SQL'/>
+        <Chart width={70} skill='PostegreSQL | PL/pgSQL'/>
+        <Chart width={80} skill='Cloud Services (Microsoft Azure)'/>
       </div>
     </div>
     <Loader />
